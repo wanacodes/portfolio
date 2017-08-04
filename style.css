@@ -1,0 +1,74 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  }
+
+.container {
+  /*width: 100%;*/
+  height: 100vh;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row:not(:first-child) {
+  flex: 1;
+}
+
+.row:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cube {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#cube figure{
+  background-color: #1580ee;
+  height: 300px;
+  width: 300px;
+  /*position: absolute;*/
+  transform-style: preserve-3d;
+}
+
+.container-project {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#cube figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+}
+
+#cube figure:nth-child(1) { transform: rotateY(   0deg ) translateZ(100px ); background-color:  red}
+#cube figure:nth-child(2) { transform: rotateY(  90deg ) translateZ(100px ); }
+#cube figure:nth-child(3) { transform: rotateY(  180deg ) translateZ(100px ); }
+#cube figure:nth-child(4) { transform: rotateY( 270deg ) translateZ(100px ); }
+
+/*verticle timeline*/
